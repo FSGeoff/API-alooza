@@ -11,3 +11,11 @@ $(document).ready(function () {
 		console.log(response);
 	});
 });
+$(document).ready(function () {
+	$.ajax({
+		url: "https://data.usajobs.gov/api/codelist/agencysubelements",
+		method: "GET",
+	}).then(function (response) {
+		console.log(response);
+	});
+});
