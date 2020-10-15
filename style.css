@@ -1,0 +1,36 @@
+.header {
+	text-align: center;
+	font-size: 60px;
+	color: darkgrey;
+	margin: auto;
+	padding: 10px;
+	height: 200px;
+	width: 100%;
+	background-color: crimson;
+}
+
+#top-row {
+	width: 100%;
+}
+
+#top-left {
+	height: 150px;
+	background-color: rgb(10, 181, 238);
+	border: solid 2 px gold;
+	margin: 5px;
+	position: left;
+}
+
+#middle {
+	height: 150px;
+	background-color: rgb(10, 181, 238);
+	border: solid 2 px gold;
+	margin: 5px;
+}
+#top-right {
+	height: 150px;
+	background-color: rgb(10, 181, 238);
+	border: solid 2 px gold;
+	margin: 5px;
+	position: right;
+}

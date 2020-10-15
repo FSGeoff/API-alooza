@@ -1,9 +1,16 @@
 $(document).ready(function () {
+	var depart = "JFK";
+	var arrive = "ATL";
+	var date1 = "2020-12-01";
+	var date2 = "2020-12-08";
+	var roundTrip = "USD/en-US/" + arrive + "-sky/" + depart + "-sky/" + date1;
+
 	const settings = {
 		async: true,
 		crossDomain: true,
 		url:
-			"https://rapidapi.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/SFO-sky/JFK-sky/2020-12-01",
+			"https://rapidapi.p.rapidapi.com/apiservices/browsequotes/v1.0/US/" +
+			roundTrip,
 		method: "GET",
 		headers: {
 			"x-rapidapi-host":
