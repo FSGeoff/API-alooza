@@ -19,24 +19,40 @@ $(document).ready(function () {
 	// 		console.log(response);
 	// 	});
 
+	// const settings = {
+	// 	async: true,
+	// 	crossDomain: true,
+	// 	url: "https://rapidapi.p.rapidapi.com/search?q=covid&language=en",
+	// 	method: "GET",
+	// 	headers: {
+	// 		"x-rapidapi-host": "webit-news-search.p.rapidapi.com",
+	// 		"x-rapidapi-key":
+	// 			"e4b5c01e00msh7b0b204668ea58cp1fe8d5jsn75a76eb33e33",
+	// 	},
+	// };
+
+	// $.ajax(settings).done(function (response) {
+	// 	console.log(response.data.results);
+	// 	var array = response.data.results;
+	// 	for (let i = 0; i < array.length; i++) {
+	// 		console.log(array[i].title);
+	// 		console.log(array[i].url);
+	// 	}
+	// });
+
 	const settings = {
 		async: true,
 		crossDomain: true,
-		url: "https://rapidapi.p.rapidapi.com/search?q=covid&language=en",
+		url: "https://rapidapi.p.rapidapi.com/employees/%7Bid%7D",
 		method: "GET",
 		headers: {
-			"x-rapidapi-host": "webit-news-search.p.rapidapi.com",
+			"x-rapidapi-host": "smart-locations.p.rapidapi.com",
 			"x-rapidapi-key":
 				"e4b5c01e00msh7b0b204668ea58cp1fe8d5jsn75a76eb33e33",
 		},
 	};
 
 	$.ajax(settings).done(function (response) {
-		console.log(response.data.results);
-		var array = response.data.results;
-		for (let i = 0; i < array.length; i++) {
-			console.log(array[i].title);
-			console.log(array[i].url);
-		}
+		console.log(response);
 	});
 });

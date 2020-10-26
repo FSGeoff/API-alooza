@@ -18,11 +18,21 @@ $(document).ready(function () {
 
 	$.ajax(zCall).done(function (response) {
 		console.log(response);
-		console.log(response.link);
 		for (let i = 0; i < response.nearby_restaurants.length; i++) {
-			console.log(response.nearby_restaurants[i]);
-			console.log(response.nearby_restaurants[i].restaurant.name);
-			console.log(response.nearby_restaurants[i].restaurant.url);
+			var local = response.nearby_restaurants;
+			console.log("nearby restaurants: " + local[i].restaurant.name);
+			console.log("Address: " + local[i].restaurant.location.address);
+
+			console.log(
+				"Average cost for two: " +
+					local[i].restaurant.average_cost_for_two
+			);
+			// console.log("Menu: " + response.restaurant);
+			console.log("Specialty Dish: " + local[i].restaurant.cuisines);
+
+			console.log("url: " + local[i].restaurant.url);
+			console.log("_____________________________________________");
+			console.log("_____________________________________________");
 		}
 	});
 });
